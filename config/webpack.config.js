@@ -492,24 +492,42 @@ module.exports = function(webpackEnv) {
                         {
                             test: lessRegex,
                             exclude: lessModuleRegex,
-                            use: getStyleLoaders({
-                                    importLoaders: 2,
-                                    sourceMap: isEnvProduction && shouldUseSourceMap,
-                                },
-                                'less-loader'
-                            ),
+                            use: [{
+                                loader: "style-loader" // creates style nodes from JS strings
+                            }, {
+                                 loader: "css-loader" // translates CSS into CommonJS
+                            }, {
+                                loader: "less-loader",// compiles Less to CSS
+                                options: {
+                                    sourceMap: true,
+                                    modifyVars: {
+                                        'primary-color': '#1DA57A',
+                                        'link-color': '#1DA57A',
+                                        'border-radius-base': '2px',
+                                    },
+                                    javascriptEnabled: true,
+                                }
+                            }],
                             sideEffects: true,
                         },
                         {
                             test: lessModuleRegex,
-                            use: getStyleLoaders({
-                                    importLoaders: 2,
-                                    sourceMap: isEnvProduction && shouldUseSourceMap,
-                                    modules: true,
-                                    getLocalIdent: getCSSModuleLocalIdent,
-                                },
-                                'less-loader'
-                            )
+                            use: [{
+                                loader: "style-loader" // creates style nodes from JS strings
+                            }, {
+                                 loader: "css-loader" // translates CSS into CommonJS
+                            }, {
+                                loader: "less-loader",// compiles Less to CSS
+                                options: {
+                                    sourceMap: true,
+                                    modifyVars: {
+                                        'primary-color': '#1DA57A',
+                                        'link-color': '#1DA57A',
+                                        'border-radius-base': '2px',
+                                    },
+                                    javascriptEnabled: true,
+                                }
+                            }]
                         },
                         // "file" loader makes sure those assets get served by WebpackDevServer.
                         // When you `import` an asset, you get its (virtual) filename.

@@ -1,0 +1,47 @@
+.banner {
+    width: 100%;
+    height: 100%;
+    background: #cecece;
+    padding: 3.5% 24px 6.375% 24px;
+    user-select: none;
+    -webkit-user-drag: none;
+    // svg
+    .bg-wrapper{
+        width: 100%;
+        height: 496px;
+        z-index: 1;
+        position: absolute;
+        text-align: center;
+        left: 0;
+        .anim-bg {
+            width: 100%;
+            max-width: 1366px;
+            height: 100%;
+            z-index: 1;
+        }
+    }
+    &-main {
+        z-index: 99;
+        margin: auto;
+        padding: 24px;
+        &-logo {
+            margin-top: 48px;
+            text-align: center;
+            img {
+                width: 320px;
+            }
+        }
+        &-text {
+            margin: 24px auto 72px auto;
+            text-align: center;
+        }
+        p {
+            font-size: 24px;
+            color: #4f4f4f;
+            margin: auto;
+            line-height: 52px;
+            letter-spacing: 0.1em;
+            max-width: 567px;
+        }
+    }
+}

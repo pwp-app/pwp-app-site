@@ -3,6 +3,8 @@ import { IntlProvider } from "react-intl";
 import Landing from "./view/landing";
 // locale
 import zhLocale from './locale/zh-CN.json';
+// style
+import './style/index.less';
 
 const userLang = navigator.language || '';
 const language = userLang.toLowerCase().substr(0, 2);
