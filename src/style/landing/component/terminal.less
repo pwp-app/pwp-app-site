@@ -1,0 +1,47 @@
+.terminal {
+    width: 100%;
+    max-width: 840px;
+    height: 480px;
+    margin: 0 auto 32px auto;
+    background: #fff;
+    border-radius: 0.75em;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    &-header {
+        height: 40px;
+        &-icon {
+            padding: 9.5px 16px;
+            width: max-content;
+            position: absolute;
+            .icon {
+                width: 13px;
+                height: 13px;
+                margin-right: 8px;
+                border-radius: 50%;
+                display: inline-block;
+            }
+            .icon-close {
+                background-color: rgb(255,95,86);
+            }
+            .icon-minimize {
+                background-color: rgb(255,189,46);
+            }
+            .icon-fullscreen {
+                background-color: rgb(39,201,63);
+            }
+        }
+        &-title {
+            width: 100%;
+            line-height: 40px;
+            text-align: center;
+            user-select: none;
+            -webkit-user-drag: none;
+        }
+    }
+    &-body {
+        padding: 8px 24px;
+        p {
+            line-height: 18px;
+            font-family: consolas;
+        }
+    }
+}

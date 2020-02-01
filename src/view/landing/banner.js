@@ -49,7 +49,7 @@ class Banner extends React.PureComponent {
                                     </g>
                                 </TweenOneYG>
                             </g>
-                            <g id="group-right" transform="translate(960, 0)">
+                            <g id="group-right" transform="translate(924, 0)">
                                 <TweenOneYG>
                                     <g id="c-2">
                                         <circle id="circle-1" stroke="#959595" strokeWidth="2" fill="transparent" cx="125" cy="58" r="28" />
@@ -68,7 +68,7 @@ class Banner extends React.PureComponent {
                     </TweenOne>
                 </div>
                 <div className="banner-main">
-                    <TweenOne component="" animation={{ opacity: 0, type: 'from', delay: 100}} key="logo">
+                    <TweenOne component="" animation={{ opacity: 0, scale: 0, type: 'from', delay: 100}} key="logo">
                         <div className="banner-main-logo">
                             <img src="https://img.backrunner.top/hexo/pwp.app_shadow.png" alt=""/>
                         </div>

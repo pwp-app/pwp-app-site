@@ -1,10 +1,13 @@
 import React from 'react';
+import {Icon} from 'antd';
 
 class Footer extends React.PureComponent {
     render() {
         return (
             <div className="footer" id="footer">
-                <span>Made by BackRunner. Powered by React &alt; Antd.<i></i></span>
+                <div className="footer-text">
+                    <span>Made by BackRunner. Powered by React & Antd.<i><Icon type="github" /></i></span>
+                </div>
             </div>
         );
     }

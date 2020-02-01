@@ -13,6 +13,28 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+// scroll bar
+body::-webkit-scrollbar {
+    width: 10px;
+    z-index: 999;
+}
+
+body::-webkit-scrollbar-track-piece {
+    background: #cecece;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 9px;
+    background-color: #959595;
+}
+
+body::-webkit-scrollbar-button {
+    display: none;
+}
+
 // import other
 @import './landing/header.less';
 @import './landing/banner.less';
+@import './landing/footer.less';
+@import './landing/section/aboutus.less';
+@import './landing/component/terminal.less';
