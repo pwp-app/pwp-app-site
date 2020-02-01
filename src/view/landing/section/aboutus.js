@@ -1,17 +1,21 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import Terminal from '../components/terminal';
+import { OverPack } from 'rc-scroll-anim';
+import TweenOne from 'rc-tween-one';
 
 class About extends React.PureComponent {
     render () {
         return (
-            <div class="landing-section about" id="about">
-                <div class="about-title">
+            <div className="landing-section about" id="about">
+                <div className="about-title">
                     <h1><FormattedMessage id="about.title"/></h1>
                 </div>
-                <div class="about-main">
-                    <Terminal/>
-                </div>
+                <OverPack className="about-main" playScale="0.25" hideProps={{ tweenOne: { reverse: true }}}>
+                    <TweenOne component="" animation={{ opacity: 0, type: 'from', delay: 50}} key="terminal">
+                        <Terminal/>
+                    </TweenOne>
+                </OverPack>
             </div>
         )
     }

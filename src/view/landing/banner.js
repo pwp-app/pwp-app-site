@@ -30,37 +30,37 @@ class Banner extends React.PureComponent {
                             <g id="group-left">
                                 <TweenOneYG>
                                     <g id="r-1">
-                                        <rect id="rect-1" fill="#959595" transform="rotate(-34.00000, 183 85)" x="162" y="64" width="42" height="42" rx="2" />
+                                        <rect id="rect-1" fill="#959595" transform="rotate(-34.00000, 21 85)" x="0" y="64" width="42" height="42" rx="2" />
                                     </g>
                                 </TweenOneYG>
                                 <TweenOneYG>
                                     <g id="r-2">
-                                        <rect id="rect-2" stroke="#959595" strokeWidth="2" fill="transparent" transform="rotate(16.00000)" x="401" y="176" width="32" height="32" rx="2" />
+                                        <rect id="rect-2" stroke="#959595" strokeWidth="2" fill="transparent" transform="rotate(16.00000)" x="240" y="176" width="32" height="32" rx="2" />
                                     </g>
                                 </TweenOneYG>
                                 <TweenOneYG>
                                     <g id="p-1">
-                                        <polygon id="poly-1" stroke="#959595" fill="transparent" strokeWidth="2" transform="rotate(45.000000) translate(96, 0) scale(1.2)" points="139 77 152 100 126 100" />
+                                        <polygon id="poly-1" stroke="#959595" fill="transparent" strokeWidth="2" transform="rotate(45.000000) translate(-60, 85) scale(1.2)" points="139 77 152 100 126 100" />
                                     </g>
                                 </TweenOneYG>
                                 <TweenOneYG>
                                     <g id="c-1">
-                                        <circle id="circle-1" fill="#959595" cx="248" cy="436" r="12" />
+                                        <circle id="circle-1" fill="#959595" cx="88" cy="436" r="12" />
                                     </g>
                                 </TweenOneYG>
                             </g>
-                            <g id="group-right" transform="translate(924, 0)">
+                            <g id="group-right">
                                 <TweenOneYG>
                                     <g id="c-2">
-                                        <circle id="circle-1" stroke="#959595" strokeWidth="2" fill="transparent" cx="125" cy="58" r="28" />
+                                        <circle id="circle-1" stroke="#959595" strokeWidth="2" fill="transparent" cx="0" cy="58" r="28" />
                                     </g>
                                 </TweenOneYG>
                                 <TweenOneYG>
                                     <g id="p-2">
-                                        <polygon id="poly-1" fill="#959595" transform="rotate(-26.000000) translate(-63, 200) scale(1.75)" points="139 77 152 100 126 100" />
+                                        <polygon id="poly-1" fill="#959595" transform="rotate(-26.000000) translate(-180, 150) scale(1.75)" points="139 77 152 100 126 100" />
                                     </g>
                                     <g id="r-3">
-                                        <rect id="rect-2" stroke="#959595" strokeWidth="2" fill="transparent" transform="rotate(-42.00000,218 402)" x="172" y="384" width="36" height="36" rx="2" />
+                                        <rect id="rect-2" stroke="#959595" strokeWidth="2" fill="transparent" transform="rotate(-42.00000,63 414)" x="47" y="398" width="32" height="32" rx="2" />
                                     </g>
                                 </TweenOneYG>
                             </g>

@@ -48,6 +48,8 @@
     "postcss-preset-env": "6.7.0",
     "postcss-safe-parser": "4.0.1",
     "rc-banner-anim": "^2.4.3",
+    "rc-queue-anim": "^1.8.3",
+    "rc-scroll-anim": "^2.7.4",
     "rc-tween-one": "^2.6.8",
     "react": "^16.12.0",
     "react-app-polyfill": "^1.0.5",
