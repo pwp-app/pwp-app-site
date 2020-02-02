@@ -70,7 +70,7 @@ class Banner extends React.PureComponent {
                 <div className="banner-main">
                     <TweenOne component="" animation={{ opacity: 0, scale: 0, type: 'from', delay: 100}} key="logo">
                         <div className="banner-main-logo">
-                            <img src="https://img.backrunner.top/hexo/pwp.app_shadow.png" alt=""/>
+                            <img src="https://img.backrunner.top/pwp_official/pwp.app_shadow.png" alt=""/>
                         </div>
                     </TweenOne>
                     <TweenOne component="" animation={{ opacity: 0, type: 'from', delay: 300}} key="text">

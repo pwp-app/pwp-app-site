@@ -1,0 +1,18 @@
+[
+    [{
+        "name": "Fastnote",
+        "logo": "https://img.backrunner.top/pwp_official/fastnote_logo.png",
+        "desc": {
+            "zh": "速记便签"
+        },
+        "link": "https://note.pwp.app"
+    },
+    {
+        "name": "pChecker",
+        "logo": "",
+        "desc": {
+            "zh": "文件Hash校验器"
+        },
+        "link": "https://pchecker.pwp.app"
+    }]
+]

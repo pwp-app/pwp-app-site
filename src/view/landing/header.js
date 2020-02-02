@@ -8,7 +8,7 @@ class Header extends React.PureComponent {
                 <Row className="header">
                     <Col span={12}>
                         <div className="header-logo">
-                            <img src="https://img.backrunner.top/hexo/pwp.app.png" alt=""/>
+                            <img src="https://img.backrunner.top/pwp_official/pwp.app.png" alt=""/>
                             <span>pwp.app</span>
                         </div>
                     </Col>
