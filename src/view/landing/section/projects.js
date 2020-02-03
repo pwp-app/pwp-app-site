@@ -34,7 +34,9 @@ class Projects extends React.PureComponent {
                     <h1><FormattedMessage id="projects.title"/></h1>
                 </div>
                 <div className="projects-body">
-                    <ProjectList/>
+                    <div className="project-body-list">
+                        {ProjectList()}
+                    </div>
                 </div>
             </div>
         )
