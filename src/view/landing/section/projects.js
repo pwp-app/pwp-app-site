@@ -25,9 +25,7 @@ function ProjectList() {
             </Row>
         );
     }
-    return (
-        <div className="projects-body-list">{projects}</div>
-    );
+    return projects;
 }
 
 class Projects extends React.PureComponent {

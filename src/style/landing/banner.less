@@ -24,6 +24,7 @@
         z-index: 99;
         margin: auto;
         padding: 24px;
+        position: relative;
         &-logo {
             margin-top: 48px;
             text-align: center;
@@ -49,5 +50,22 @@
     }
     #group-right {
         transform: translate(calc(100% - 20vw), 0);
+    }
+}
+
+@media (max-width: 767.99px){
+    .banner {
+        padding: 0;
+        &-main {
+            &-logo {
+                img {
+                    width: 280px;
+                }
+            }
+            p {
+                font-size: 22
+                px;
+            }
+        }
     }
 }
