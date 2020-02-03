@@ -3,6 +3,7 @@ import projectConfig from '../../../config/projects.json';
 import {FormattedMessage} from 'react-intl'
 import {Row} from 'antd';
 import ProjectCard from '../components/projectCard.js';
+import han from '../../../util/han.simple';
 
 function ProjectList() {
     const projects = [];
@@ -11,12 +12,15 @@ function ProjectList() {
     for (let i = 0;i<projectConfig.length;i++){
         const projectRow = [];
         for (let project of projectConfig[i]){
+            if (language === 'zh'){
+                project.desc[language] = han(project.desc[language]);
+            }
             projectRow.push(
                 <ProjectCard logo={project.logo} name={project.name} desc={project.desc[language]} link={project.link}/>
             );
         }
         projects.push(
-            <Row gutter={[24,24]}>
+            <Row gutter={[32,32]}>
                 {projectRow}
             </Row>
         );
