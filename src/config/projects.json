@@ -44,5 +44,12 @@
             "zh": "邀请制应用内测平台"
         },
         "link": "https://leaf.pwp.app"
+    }, {
+        "name": "Pixiv C",
+        "logo": "https://img.backrunner.top/pwp_official/leaf_logo.png",
+        "desc": {
+            "zh": "Pixivic 的替代前端"
+        },
+        "link": "https://pixivc.pwp.app"
     }]
 ]

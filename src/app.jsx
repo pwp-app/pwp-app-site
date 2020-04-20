@@ -3,6 +3,7 @@ import { IntlProvider } from "react-intl";
 import Landing from "./view/landing";
 // locale
 import zhLocale from './locale/zh-CN.json';
+import enLocale from './locale/en-US.json';
 // style
 import './style/index.less';
 
@@ -13,6 +14,8 @@ let messages = zhLocale;
 if (language === 'zh') {
     locale = 'zh';
     messages = zhLocale;
+} else {
+    messages = enLocale;
 }
 
 class App extends Component {
