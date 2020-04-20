@@ -2,14 +2,14 @@ import React from 'react';
 import {Col} from 'antd';
 import LazyLoad from 'react-lazyload'
 import {OverPack} from 'rc-scroll-anim';
-import QueueAnim from 'rc-queue-anim';
+import TweenOne from 'rc-tween-one';
 
 class ProjectCard extends React.Component {
     render() {
         return (
             <Col span={8} className="col-card">
-                <OverPack playScale="0.1">
-                    <QueueAnim leaveReverse>
+                <OverPack playScale="0.25">
+                    <TweenOne animation={{ opacity: 0, type: 'from', delay: 25 * this.props.index, duration: 500}} key={`ProjectCard-${this.props.index}`}>
                         <div className="card" key="card" onClick={this.handleClick.bind(this, this.props.link)}>
                             <div className="card-logo">
                                 <LazyLoad height={85}>
@@ -21,7 +21,7 @@ class ProjectCard extends React.Component {
                                 <div className="card-body-desc"><span>{this.props.desc}</span></div>
                             </div>
                         </div>
-                    </QueueAnim>
+                    </TweenOne>
                 </OverPack>
             </Col>
         )

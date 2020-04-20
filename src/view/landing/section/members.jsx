@@ -4,7 +4,7 @@ import { Carousel } from 'antd';
 import memberConfig from '../../../config/members.json';
 import Member from '../components/member';
 import { OverPack } from 'rc-scroll-anim';
-import QueueAnim from 'rc-queue-anim';
+import TweenOne from 'rc-tween-one';
 
 function MemberList(){
     const members = [];
@@ -24,12 +24,12 @@ class Members extends React.PureComponent {
                     <h1><FormattedMessage id="members.title"/></h1>
                 </div>
                 <div className="members-body">
-                    <OverPack playScale={0.1}>
-                        <QueueAnim leaveReverse>
-                            <Carousel autoplay key="members">
+                    <OverPack playScale="0.25" hideProps={{ tweenOne: { reverse: true }}}>
+                        <TweenOne component="" animation={{ opacity: 0, type: 'from', delay: 50, duration: 500}} key="members">
+                            <Carousel autoplay>
                                 {MemberList()}
                             </Carousel>
-                        </QueueAnim>
+                        </TweenOne>
                     </OverPack>
                 </div>
             </div>

@@ -15,7 +15,7 @@ function ProjectList() {
             if (language === "zh") {
                 project.desc[language] = han(project.desc[language]);
             }
-            projectRow.push(<ProjectCard logo={project.logo} name={project.name} desc={project.desc[language]} link={project.link} />);
+            projectRow.push(<ProjectCard index={i} logo={project.logo} name={project.name} desc={project.desc[language]} link={project.link} />);
         }
         projects.push(<Row gutter={[32, 32]}>{projectRow}</Row>);
     }
