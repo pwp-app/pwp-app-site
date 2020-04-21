@@ -9,16 +9,15 @@ function ProjectList() {
     const projects = [];
     const userLang = navigator.language || "";
     const language = userLang.toLowerCase().substr(0, 2);
-    for (let i = 0; i < projectConfig.length; i++) {
-        const projectRow = [];
-        for (let project of projectConfig[i]) {
+    const projectRow = [];
+        for (let i = 0; i < projectConfig.length; i++) {
+            let project = projectConfig[i];
             if (language === "zh") {
                 project.desc[language] = han(project.desc[language]);
             }
             projectRow.push(<ProjectCard index={i} logo={project.logo} name={project.name} desc={project.desc[language]} link={project.link} />);
         }
         projects.push(<Row gutter={[32, 32]}>{projectRow}</Row>);
-    }
     return projects;
 }
 

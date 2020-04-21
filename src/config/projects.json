@@ -1,5 +1,5 @@
 [
-    [{
+    {
         "name": "Fastnote",
         "logo": "https://img.backrunner.top/pwp_official/fastnote_logo.png",
         "desc": {
@@ -22,8 +22,8 @@
             "zh": "私有企业邮箱"
         },
         "link": "https://www.kuromail.com"
-    }],
-    [{
+    },
+    {
         "name": "Shortlink",
         "logo": "https://img.backrunner.top/pwp_official/shortlink_logo.png",
         "desc": {
@@ -51,5 +51,5 @@
             "zh": "Pixivic 的替代前端"
         },
         "link": "https://pixivc.pwp.app"
-    }]
+    }
 ]
