@@ -6,7 +6,7 @@ class Footer extends React.PureComponent {
         return (
             <div className="footer" id="footer">
                 <div className="footer-text">
-                    <span>Made by BackRunner. Powered by React & Antd.<i><GithubOutlined onClick={this.openGitHub} /></i></span>
+                    <span>Made by BackRunner. Powered by React & Antd.<GithubOutlined className="icon" onClick={this.openGitHub} /></span>
                 </div>
             </div>
         );
