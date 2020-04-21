@@ -1,12 +1,12 @@
 import React from 'react';
-import {Icon} from 'antd';
+import { GithubOutlined } from '@ant-design/icons';
 
 class Footer extends React.PureComponent {
     render() {
         return (
             <div className="footer" id="footer">
                 <div className="footer-text">
-                    <span>Made by BackRunner. Powered by React & Antd.<i><Icon type="github" onClick={this.openGitHub}/></i></span>
+                    <span>Made by BackRunner. Powered by React & Antd.<i><GithubOutlined onClick={this.openGitHub} /></i></span>
                 </div>
             </div>
         );
