@@ -37,10 +37,28 @@
         }
     }
     &-body {
-        padding: 8px 24px 16px 24px;
-        p {
-            line-height: 18px;
+        padding: 0px 24px 16px 24px;
+        height: 440px;
+        pre {
+            line-height: 32px;
             font-family: consolas;
         }
+    }
+}
+
+.cursor {
+    border-right: 1px solid rgba(0, 0, 0, 0.65);
+}
+
+.cursor-blink {
+    animation: blink 1s infinite steps(1, start);
+}
+
+@keyframes blink {
+    0%, 100% {
+        border-color: rgba(0, 0, 0, 0.65);
+    }
+    50% {
+        border-color: #fff;
     }
 }
