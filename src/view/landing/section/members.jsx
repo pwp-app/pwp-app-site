@@ -10,7 +10,7 @@ function MemberList(){
     const members = [];
     for (let member of memberConfig) {
         members.push(
-            <Member avatar={member.avatar} key={member.name} name={member.name} saying={member.saying}></Member>
+            <Member avatar={member.avatar} key={member.name} name={member.name} position={member.position} saying={member.saying}></Member>
         )
     }
     return members;

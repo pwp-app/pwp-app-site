@@ -12,6 +12,7 @@ class Member extends Component {
                 </div>
                 <div className="member-desc">
                     <p className="member-desc-name">{this.props.name}</p>
+                    <p className="member-desc-position">{this.props.position}</p>
                     <p className="member-desc-saying">" {this.props.saying} "</p>
                 </div>
             </div>

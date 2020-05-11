@@ -1,11 +1,13 @@
 [
     {
         "name": "BackRunner",
+        "position": "一只码农",
         "saying": "404 not found.",
         "avatar": "https://img.backrunner.top/pwp_official/backrunner_avatar.png"
     },
     {
         "name": "xiaox",
+        "position": "服务器管理员",
         "saying": "[NOTICE] Shutdown sequence commencing... Press Ctrl-C again for emergency shutdown.",
         "avatar": "https://img.backrunner.top/pwp_official/xiaox_avatar.jpg"
     }
