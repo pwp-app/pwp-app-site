@@ -38,10 +38,21 @@
     }
     &-body {
         padding: 0px 24px 16px 24px;
-        height: 440px;
+        min-height: 440px;
         pre {
             line-height: 32px;
             font-family: consolas;
+            white-space: pre-wrap;
+            word-wrap: break-all;
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .terminal {
+        &-body {
+            min-height: 520px;
         }
     }
 }
