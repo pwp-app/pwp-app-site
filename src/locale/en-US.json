@@ -1,5 +1,6 @@
 {
-    "banner.subtitle": "Turning interesting ideas into executable programs",
+    "banner.subtitle": "Turning ideas into executable programs",
+    "banner.subtitle.mobile": "Turning ideas into programs",
     "banner.subtitle.2": "Idea oriented programming",
     "about.title": "About us",
     "projects.title": "Projects",

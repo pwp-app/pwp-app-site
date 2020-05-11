@@ -3,25 +3,25 @@ import { FormattedMessage } from 'react-intl';
 import TweenOne from 'rc-tween-one';
 
 function TweenOneYG(props) {
-    const r = (Math.round(Math.random() * 2) - 1) ? 1 : -1;
+    const r = Math.round(Math.random() * 2) - 1 ? 1 : -1;
     return (
-      <TweenOne
+        <TweenOne
             component="g"
             animation={{
-            y: r * ((Math.random() * 18) + 10),
-            yoyo: true,
-            repeat: -1,
-            duration: (Math.random() * 2500) + 2500,
-            ease: 'easeInOutSine',
+                y: r * (Math.random() * 18 + 10),
+                yoyo: true,
+                repeat: -1,
+                duration: Math.random() * 2500 + 2500,
+                ease: 'easeInOutSine',
             }}
         >
             {props.children}
-      </TweenOne>
+        </TweenOne>
     );
 }
 
 class Banner extends React.PureComponent {
-    render () {
+    render() {
         return (
             <div className="landing-section banner" id="banner">
                 <div className="bg-wrapper">
@@ -68,15 +68,25 @@ class Banner extends React.PureComponent {
                     </TweenOne>
                 </div>
                 <div className="banner-main">
-                    <TweenOne component="" animation={{ opacity: 0, scale: 0, type: 'from', delay: 100}} key="logo">
+                    <TweenOne component="" animation={{ opacity: 0, scale: 0, type: 'from', delay: 100 }} key="logo">
                         <div className="banner-main-logo">
-                            <img src="https://img.backrunner.top/pwp_official/pwp.app_shadow.png" alt=""/>
+                            <img src="https://img.backrunner.top/pwp_official/pwp.app_shadow.png" alt="" />
                         </div>
                     </TweenOne>
-                    <TweenOne component="" animation={{ opacity: 0, type: 'from', delay: 300}} key="text">
+                    <TweenOne component="" animation={{ opacity: 0, type: 'from', delay: 300 }} key="text">
                         <div className="banner-main-text">
-                            <p className="banner-text-line"><FormattedMessage id="banner.subtitle"/></p>
-                            <p className="banner-text-line"><FormattedMessage id="banner.subtitle.2"/></p>
+                            {document.documentElement.clientWidth < 767 ? (
+                                <p className="banner-text-line">
+                                    <FormattedMessage id="banner.subtitle.mobile"></FormattedMessage>
+                                </p>
+                            ) : (
+                                <p className="banner-text-line">
+                                    <FormattedMessage id="banner.subtitle" />
+                                </p>
+                            )}
+                            <p className="banner-text-line">
+                                <FormattedMessage id="banner.subtitle.2" />
+                            </p>
                         </div>
                     </TweenOne>
                 </div>
