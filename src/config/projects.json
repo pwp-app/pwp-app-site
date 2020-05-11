@@ -48,7 +48,7 @@
         "name": "Pixiv C",
         "logo": "https://img.backrunner.top/pwp_official/pixivc_logo.png",
         "desc": {
-            "zh": "Pixivic 的替代前端"
+            "zh": "技术实验性 Pixiv 图站"
         },
         "link": "https://pixivc.pwp.app"
     }
