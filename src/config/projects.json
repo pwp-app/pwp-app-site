@@ -51,5 +51,12 @@
             "zh": "技术实验性 Pixiv 图站"
         },
         "link": "https://pixivc.pwp.app"
+    }, {
+        "name": "CodeSlice",
+        "logo": "https://img.backrunner.top/pwp_official/codeslice_logo.png",
+        "desc": {
+            "zh": "类 Pastebin 的代码分享工具"
+        },
+        "link": "https://codeslice.pwp.app"
     }
 ]
