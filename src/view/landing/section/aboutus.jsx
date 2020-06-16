@@ -12,7 +12,7 @@ class About extends React.PureComponent {
                     <h1><FormattedMessage id="about.title"/></h1>
                 </div>
                 <OverPack className="about-main" playScale="0.25">
-                <TweenOne animation={{ opacity: 0, type: 'from', delay: 50, duration: 500}} key="terminal">    
+                    <TweenOne animation={{ opacity: 0, type: 'from', delay: 50, duration: 500}} key="terminal">
                         <Terminal/>
                     </TweenOne>
                 </OverPack>

@@ -1,17 +1,26 @@
-import React from 'react'
-
+import React from 'react';
+import { OverPack } from 'rc-scroll-anim';
+import TweenOne from 'rc-tween-one';
 class Thanks extends React.PureComponent {
     render() {
         return (
             <div className="thanks">
-                <div className="thanks-title">
-                    <h1>特别感谢</h1>
-                </div>
-                <div className="thanks-desc">
-                    <p><a href="https://werhw.cn" rel="noopener noreferrer" target="_blank">HelloWorld 技术协会</a></p>
-                </div>
+                <OverPack className="about-main" playScale="0.25">
+                    <TweenOne animation={{ opacity: 0, type: 'from', delay: 50, duration: 500 }} key="terminal">
+                        <div className="thanks-title">
+                            <h1>特别感谢</h1>
+                        </div>
+                        <div className="thanks-desc">
+                            <p>
+                                <a href="https://werhw.cn" rel="noopener noreferrer" target="_blank">
+                                    HelloWorld 技术协会
+                                </a>
+                            </p>
+                        </div>
+                    </TweenOne>
+                </OverPack>
             </div>
-        )
+        );
     }
 }
 
