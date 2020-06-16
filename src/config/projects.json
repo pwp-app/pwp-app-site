@@ -58,5 +58,12 @@
             "zh": "类 Pastebin 的代码分享工具"
         },
         "link": "https://codeslice.pwp.app"
+    }, {
+        "name": "Lognet",
+        "logo": "https://img.backrunner.top/pwp_official/lognet.png",
+        "desc": {
+            "zh": "Web 应用日志收集平台"
+        },
+        "link": "https://lognet.pwp.app"
     }
 ]
