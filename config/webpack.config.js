@@ -496,17 +496,6 @@ module.exports = function(webpackEnv) {
                                 loader: "style-loader" // creates style nodes from JS strings
                             }, {
                                  loader: "css-loader" // translates CSS into CommonJS
-                            }, {
-                                loader: "less-loader",// compiles Less to CSS
-                                options: {
-                                    sourceMap: true,
-                                    modifyVars: {
-                                        'primary-color': '#1DA57A',
-                                        'link-color': '#1DA57A',
-                                        'border-radius-base': '2px',
-                                    },
-                                    javascriptEnabled: true,
-                                }
                             }],
                             sideEffects: true,
                         },
