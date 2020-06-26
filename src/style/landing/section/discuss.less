@@ -1,0 +1,41 @@
+.discuss {
+    background: darken(#fff, 4.75%);
+    padding: 96px 128px;
+    &-title {
+        width: 100%;
+        user-select: none;
+        h1 {
+            font-size: 24px;
+            color: #323232;
+            text-align: center;
+            letter-spacing: 0.05em;
+        }
+        margin-bottom: 32px;
+    }
+    &-content {
+        width: 100%;
+        user-select: none;
+        p {
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            a {
+                color: #323232;
+                transition: 100ms;
+                margin-bottom: 24px;
+            }
+            a:hover {
+                color: #646464;
+            }
+        }
+        &-link {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+/* Mobile */
+
+.discuss {
+    padding: 96px 24px;
+}
