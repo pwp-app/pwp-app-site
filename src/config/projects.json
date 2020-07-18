@@ -45,12 +45,12 @@
         },
         "link": "https://leaf.pwp.app"
     }, {
-        "name": "Pixiv C",
+        "name": "Pixiviz",
         "logo": "https://img.backrunner.top/pwp_official/pixivc_logo.png",
         "desc": {
-            "zh": "技术实验性 Pixiv 图站"
+            "zh": "一个连接到 Pixiv 的小站"
         },
-        "link": "https://pixivc.pwp.app"
+        "link": "https://pixiviz.pwp.app"
     }, {
         "name": "CodeSlice",
         "logo": "https://img.backrunner.top/pwp_official/codeslice_logo.png",
