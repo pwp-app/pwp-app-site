@@ -24,13 +24,6 @@
         "link": "https://www.kuromail.com"
     },
     {
-        "name": "Shortlink",
-        "logo": "https://img.backrunner.top/pwp_official/shortlink_logo.png",
-        "desc": {
-            "zh": "短链接平台"
-        },
-        "link": "https://pwp.link"
-    }, {
         "name": "myStats",
         "logo": "https://img.backrunner.top/pwp_official/mystats_logo.png",
         "desc": {
