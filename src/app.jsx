@@ -12,20 +12,20 @@ const language = userLang.toLowerCase().substr(0, 2);
 let locale = 'zh';
 let messages = zhLocale;
 if (language === 'zh') {
-    locale = 'zh';
-    messages = zhLocale;
+  locale = 'zh';
+  messages = zhLocale;
 } else {
-    messages = enLocale;
+  messages = enLocale;
 }
 
 class App extends Component {
-    render () {
-        return (
-            <IntlProvider locale={locale} messages={messages}>
-                <Landing/>
-            </IntlProvider>
-        );
-    }
+  render () {
+    return (
+      <IntlProvider locale={locale} messages={messages}>
+        <Landing/>
+      </IntlProvider>
+    );
+  }
 }
 
 export default App;

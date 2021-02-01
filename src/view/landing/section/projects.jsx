@@ -6,36 +6,36 @@ import ProjectCard from "../components/projectCard.jsx";
 import han from "../../../util/han.simple";
 
 function ProjectList() {
-    const projects = [];
-    const userLang = navigator.language || "";
-    const language = userLang.toLowerCase().substr(0, 2);
-    const projectRow = [];
-    for (let i = 0; i < projectConfig.length; i++) {
-        let project = projectConfig[i];
-        if (language === "zh") {
-            project.desc[language] = han(project.desc[language]);
-        }
-        projectRow.push(<ProjectCard index={i} logo={project.logo} key={project.name} name={project.name} desc={project.desc[language]} link={project.link} />);
+  const projects = [];
+  const userLang = navigator.language || "";
+  const language = userLang.toLowerCase().substr(0, 2);
+  const projectRow = [];
+  for (let i = 0; i < projectConfig.length; i++) {
+    let project = projectConfig[i];
+    if (language === "zh") {
+      project.desc[language] = han(project.desc[language]);
     }
-    projects.push(<Row key="projects" gutter={[32, 32]}>{projectRow}</Row>);
-    return projects;
+    projectRow.push(<ProjectCard index={i} logo={project.logo} key={project.name} name={project.name} desc={project.desc[language]} link={project.link} />);
+  }
+  projects.push(<Row key="projects" gutter={[32, 32]}>{projectRow}</Row>);
+  return projects;
 }
 
 class Projects extends React.PureComponent {
-    render() {
-        return (
-            <div className="landing-section projects" id="projects">
-                <div className="projects-title">
-                    <h1>
-                        <FormattedMessage id="projects.title" />
-                    </h1>
-                </div>
-                <div className="projects-body">
-                    <div className="project-body-list">{ProjectList()}</div>
-                </div>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className="landing-section projects" id="projects">
+        <div className="projects-title">
+          <h1>
+            <FormattedMessage id="projects.title" />
+          </h1>
+        </div>
+        <div className="projects-body">
+          <div className="project-body-list">{ProjectList()}</div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Projects;

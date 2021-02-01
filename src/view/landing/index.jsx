@@ -9,20 +9,20 @@ import Thanks from './section/thanks';
 import Discuss from './section/discuss';
 
 class Landing extends React.PureComponent {
-    render () {
-        return (
-            [
-                <Header/>,
-                <Banner/>,
-                <About/>,
-                <Projects/>,
-                <Members/>,
-                <Discuss/>,
-                <Thanks/>,
-                <Footer/>
-            ]
-        );
-    }
+  render () {
+    return (
+      [
+        <Header/>,
+        <Banner/>,
+        <About/>,
+        <Projects/>,
+        <Members/>,
+        <Discuss/>,
+        <Thanks/>,
+        <Footer/>
+      ]
+    );
+  }
 }
 
 export default Landing;
