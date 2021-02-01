@@ -1,8 +1,12 @@
 {
-    "banner.subtitle": "Turning ideas into executable programs",
-    "banner.subtitle.mobile": "Turning ideas into programs",
-    "banner.subtitle.2": "Idea oriented programming",
-    "about.title": "About us",
-    "projects.title": "Projects",
-    "members.title": "Members"
+  "banner.subtitle": "Turning ideas into executable programs",
+  "banner.subtitle.mobile": "Turning ideas into programs",
+  "banner.subtitle.2": "Idea oriented programming",
+  "about.title": "About us",
+  "projects.title": "Projects",
+	"members.title": "Members",
+	"projects.title.online": "Online Projects",
+  "projects.title.app": "Application Projects",
+	"projects.title.opensource": "Open Source Projects",
+	"projects.title.mini": "Mini Projects"
 }

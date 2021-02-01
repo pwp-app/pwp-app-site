@@ -1,32 +1,42 @@
 .projects {
-    background: #fefefe;
-    padding: 96px 128px;
-    &-title {
-        width: 100%;
-        user-select: none;
-        h1 {
-            margin: auto;
-            text-align: center;
-            color: #323232;
-            letter-spacing: 0.05em;
-        }
-        margin-bottom: 56px;
+  background: darken(#fff, 3.375%);
+  padding: 96px 128px;
+  &-title {
+    width: 100%;
+    user-select: none;
+    h1 {
+      margin: auto;
+      text-align: center;
+      color: #323232;
+      letter-spacing: 0.05em;
     }
-    &-body {
-        width: 100%;
-        &-list{
-            width: 100%;
-            max-width: 1123px;
-            margin: auto;
-        }
+    margin-bottom: 42px;
+  }
+  &-body {
+		width: 100%;
+		&-subtitle {
+			width: 100%;
+			padding: 36px 0 56px 0;
+			h2 {
+				margin: 0;
+				font-size: 24px;
+				letter-spacing: 0.05em;
+				text-align: center;
+			}
+		}
+    &-list {
+      width: 100%;
+      max-width: 1123px;
+      margin: auto;
     }
+  }
 }
 
 @media (max-width: 767.99px) {
-    .projects {
-        padding: 48px 24px;
-        &-title {
-            margin-bottom: 48px;
-        }
+  .projects {
+    padding: 48px 24px;
+    &-title {
+      margin-bottom: 48px;
     }
+  }
 }

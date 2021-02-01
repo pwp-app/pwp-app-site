@@ -1,8 +1,12 @@
 {
-    "banner.subtitle": "把有趣的想法转化成代码、可运行的工具",
-    "banner.subtitle.2": "面向想法编程",
-    "banner.subtitle.mobile": "把想法转化成可用的工具",
-    "about.title": "关于我们",
-    "projects.title": "项目列表",
-    "members.title": "成员"
+  "banner.subtitle": "把有趣的想法转化成代码、可运行的工具",
+  "banner.subtitle.2": "面向想法编程",
+  "banner.subtitle.mobile": "把想法转化成可用的工具",
+  "about.title": "关于我们",
+  "projects.title": "项目列表",
+  "projects.title.online": "线上项目",
+  "projects.title.app": "应用项目",
+  "projects.title.opensource": "开源项目",
+  "projects.title.mini": "迷你项目",
+  "members.title": "成员"
 }

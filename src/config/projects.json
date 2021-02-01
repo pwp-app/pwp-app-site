@@ -1,62 +1,74 @@
-[
+{
+	"online": [
     {
-        "name": "Fastnote",
-        "logo": "https://img.backrunner.top/pwp_official/fastnote_logo.png",
-        "desc": {
-            "zh": "速记便签"
-        },
-        "link": "https://note.pwp.app"
+      "name": "Pixiviz",
+      "logo": "https://img.backrunner.top/pwp_official/pixivc_logo.png",
+      "desc": {
+        "zh": "一个连接到 Pixiv 的小站"
+      },
+      "link": "https://pixiviz.pwp.app"
     },
     {
-        "name": "pChecker",
-        "logo": "https://img.backrunner.top/pwp_official/pchecker_logo.png",
-        "desc": {
-            "zh": "文件Hash校验器"
-        },
-        "link": "https://pchecker.pwp.app"
-    },
-    {
-        "name": "Kuromail",
-        "logo": "https://img.backrunner.top/pwp_official/kuromail_logo.png",
-        "desc": {
-            "zh": "私有企业邮箱"
-        },
-        "link": "https://www.kuromail.com"
-    },
-    {
-        "name": "myStats",
-        "logo": "https://img.backrunner.top/pwp_official/mystats_logo.png",
-        "desc": {
-            "zh": "安装量统计"
-        },
-        "link": "https://mystats.pwp.app"
-    }, {
-        "name": "Leaf",
-        "logo": "https://img.backrunner.top/pwp_official/leaf_logo.png",
-        "desc": {
-            "zh": "邀请制应用内测平台"
-        },
-        "link": "https://leaf.pwp.app"
-    }, {
-        "name": "Pixiviz",
-        "logo": "https://img.backrunner.top/pwp_official/pixivc_logo.png",
-        "desc": {
-            "zh": "一个连接到 Pixiv 的小站"
-        },
-        "link": "https://pixiviz.pwp.app"
-    }, {
-        "name": "CodeSlice",
-        "logo": "https://img.backrunner.top/pwp_official/codeslice_logo.png",
-        "desc": {
-            "zh": "类 Pastebin 的代码分享工具"
-        },
-        "link": "https://codeslice.pwp.app"
-    }, {
-        "name": "Lognet",
-        "logo": "https://img.backrunner.top/pwp_official/lognet.png",
-        "desc": {
-            "zh": "Web 应用日志收集平台"
-        },
-        "link": "https://lognet.pwp.app"
+      "name": "CodeSlice",
+      "logo": "https://img.backrunner.top/pwp_official/codeslice_logo.png",
+      "desc": {
+        "zh": "类 Pastebin 的代码分享工具"
+      },
+      "link": "https://codeslice.pwp.app"
     }
-]
+  ],
+  "app": [
+		{
+			"name": "Fastnote",
+			"logo": "https://img.backrunner.top/pwp_official/fastnote_logo.png",
+			"desc": {
+				"zh": "速记便签"
+			},
+			"link": "https://note.pwp.app"
+		},
+		{
+			"name": "pChecker",
+			"logo": "https://img.backrunner.top/pwp_official/pchecker_logo.png",
+			"desc": {
+				"zh": "文件Hash校验器"
+			},
+			"link": "https://pchecker.pwp.app"
+		}
+	],
+  "opensource": [
+		{
+      "name": "myStats",
+      "logo": "https://img.backrunner.top/pwp_official/mystats_logo.png",
+      "desc": {
+        "zh": "安装量统计"
+      },
+      "link": "https://github.com/pwp-app/mystats-frontend"
+    },
+    {
+      "name": "Leaf",
+      "logo": "https://img.backrunner.top/pwp_official/leaf_logo.png",
+      "desc": {
+        "zh": "邀请制应用内测平台"
+      },
+      "link": "https://github.com/pwp-app/leaf-frontend"
+		},
+		{
+      "name": "Lognet",
+      "logo": "https://img.backrunner.top/pwp_official/lognet.png",
+      "desc": {
+        "zh": "Web 应用日志收集平台"
+      },
+      "link": "https://github.com/pwp-app/lognet-frontend"
+    }
+	],
+	"mini": [
+		{
+			"name": "PackHome",
+			"link": "https://package.pwp.app"
+		},
+		{
+			"name": "Steam Emoji Extractor",
+			"link": "https://steamemoji.pwp.app/"
+		}
+	]
+}
