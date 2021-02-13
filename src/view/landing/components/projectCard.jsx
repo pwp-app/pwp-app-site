@@ -10,7 +10,7 @@ class ProjectCard extends React.Component {
       <Col xs={24} sm={24} md={12} lg={8} xxl={6} className="col-card">
         <OverPack playScale="0.1">
           <TweenOne animation={{ opacity: 0, type: 'from', delay: 25 * this.props.index, duration: 500 }} key={`ProjectCard-${this.props.index}`}>
-            <a href={this.props.link} target="_blank" rel="noopener noreferrer" className="card" key={`card-${this.props.index}`} onClick={this.handleClick.bind(this, this.props.link)}>
+            <a href={this.props.link} target="_blank" rel="noopener noreferrer" className="card" key={`card-${this.props.index}`}>
               <div className="card-logo">
                 <LazyLoad height={85}>
                   <img src={this.props.logo} alt=""></img>
@@ -30,9 +30,6 @@ class ProjectCard extends React.Component {
       </Col>
     );
   }
-  handleClick = (link) => {
-    window.open(link);
-  };
 }
 
 export default ProjectCard;
